@@ -1,4 +1,4 @@
-"Dun & Bradstree Home Task" 
+"Dun & Bradstreet Home Task" 
 
 To Install and run the client application:
 
@@ -22,4 +22,7 @@ The server will run on port 5000
 Special attentions:
 1. In order to perform search - enter a text and then press **Enter**
 2. Disclaimer - don't enter special characters like '(' and ')', in the hightlight term input box, in order not to crash the application
+
+The client application uses: reduc store & react material UI (mui)
+The server application is built with Express framewrok
  
