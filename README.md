@@ -23,6 +23,6 @@ Special attentions:
 1. In order to perform search - enter a text and then press **Enter**
 2. Disclaimer - don't enter special characters like '(' and ')', in the hightlight term input box, in order not to crash the application
 
-The client application uses: reduc store & react material UI (mui)
+The client application uses: redux store & react material UI (mui)
 The server application is built with Express framewrok
  
