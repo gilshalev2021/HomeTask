@@ -2,7 +2,9 @@ import React from 'react';
 
 const LinkWithMarkedTerms = (props:any) => {
   
-  const parts = props.lineText.split(new RegExp(`(${props.term.toLowerCase()})`, 'gi'));
+  const termRegex = new RegExp(`(${props.term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+
+  const parts = props.lineText.split(termRegex);
   
   const renderMarkedText = (part:string, index: number) => {
   

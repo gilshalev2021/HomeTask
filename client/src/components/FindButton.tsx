@@ -62,10 +62,12 @@ const FindButton = () => {
 
       let appearancesCount = 0;
 
-      if(event.target.value !== "") {
+      const term = event.target.value;
+     
+      if(term !== "") {
+        const termRegex = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
         queriesState.queryResults.forEach((item:Record) => {
-          const regex = new RegExp(event.target.value, 'gi');
-          const matches = item.title.match(regex);
+          const matches = item.title.match(termRegex);
           if (matches) {
             appearancesCount += matches.length;
           }
